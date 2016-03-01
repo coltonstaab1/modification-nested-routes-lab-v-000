@@ -1,2 +1,4 @@
 <h1>Editing <%= @song.title %></h1>
 <%= render partial: "form" %>
+
+<% link_to "Add Artist", edit_song_path(@song) if @song.artist.nil? %>
